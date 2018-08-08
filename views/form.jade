@@ -1,0 +1,50 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Study Project
+    // Bootstrap core CSS
+    link(href='vendor\bootstrap\css\bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(href='vendor/fontawesome-free/css/all.min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/grayscale.min.css', rel='stylesheet')
+  body#page-top
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') Study Project
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          | Menu
+          i.fas.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#about') About
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#projects') Projects
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#signup') Contact
+    // Header
+    header.masthead
+      .container.d-flex.h-100.align-items-center
+        .mx-auto.text-center
+          h1.mx-auto.my-0.text-uppercase R
+          h2.text-white-50.mx-auto.mt-2.mb-5 R공부 파일들
+
+    form(action='/R' method='post')
+      p
+        제목
+      p
+        input(type='text' name='title')
+      p
+        코드내용
+      p
+        textarea(name='Rcode')
+      p
+        input(type='submit' value="글 등록")    
+        input(type='reset' value='글 지우기')
